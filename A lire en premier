@@ -1,0 +1,17 @@
+  Salut, si tu lis ca c'est que tu ne veux pas te casser la tete avec born2beroot, venir ici aura ete la meilleur decision de ta vie!
+  Pourquoi lire ce document en premier, tout d'abord parcequ'il sera le sommaire de ce projet, ca sera plus simple pour toi de suivre le sommaire apres ce n'est pas obliger juste fortement recommander !
+  Ce projet n'est pas difficile mais chiant.
+  Il a pour but de faire decouvrir la virtualisation et la maniere dont on configure un OS (systeme d'exploitation).
+  Je ne sais pas si j'ai oublier quelque chose, il est 4h du matin, j'ai fait tout ca de moi meme je suis crever m'en voulez pas.
+  Passons au sommaire.
+  
+ Sommaire : 
+            - Etape 1 : Config-VM
+            - Etape 2 : Config-SUDO
+            - Etape 3 : Config-SSH
+            - Etape 4 : Config-USER
+            - Etape 5 : Config-CRON
+ 
+ Je conseillerai d'aller voir avant tout la liste des astuces pour faciliter encore plus cet accompagnement.
+ J'espere que vous serez apprecier le travail de quelqu'un qui a penser a vous les amis.
+ J'y ai mis le fond et la forme. Alors courage et si il y a un probleme ou que le guide n'est pas complet contacter moi.
