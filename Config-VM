@@ -1,0 +1,25 @@
+                                                      Liste des actions faites pour Born2beroot
+
+
+                                                       CONFIGURATION DE LA MACHINE VIRTUELLE
+
+1 - Telecharger l'ISO de debian 11 .
+2 - Configurer la machine virtuel avec linux / Oracle 64 bits. Puis valider par defauts le tout.
+3 - Choisir dans lecteur optique l'ISO de debian telecharger plus tot.
+4 - Puis choisir "Install" , choisir Francais pour la langue, la localisation et choisir Etat-Unis pour le clavier.
+5 - Nom de la machine : username42 .
+7 - Pour les mdp choisir des mots de passe simple pour ne pas les oublier. Ici on ne mettra qu'une lettre pour tout les
+ mdp
+8 - pour domaine ne rien mettre, appuyer sur entrer simplement.
+9 - Nom de d'utilisateur : username . Meme mots de passe.
+10 - Choisir "Assister - utiliser tout un disque avec LVM chiffre" si vous voulez faire les bonus choisissez "manuel"
+ici on fera sans .
+11 - Entrer , puis "Partitions /home , /var et /tmp separees"
+12 - Oui
+13 - Puis lors du telechargement appuyer annuler. Si vous laisser a 39% du telechargement la machine virtuel va crache
+14 - Phrase secrete : J'ai mis la meme chose que le mdp pour m'en souvenir .
+15 - Oui , puis lorsqu'il demande la taille du partitionement du disque (a peu pres 12.4GB) effacer et mettez "max".
+16 - Terminer ... Oui
+17 - Laissez maintenant l'instalation proceder, ca devrait durer 3 min pour les plus rapides, jusqu'a 20 min pour les p
+lus long, choisissez un bon ordi .
+18 - 
