@@ -1,0 +1,10 @@
+Config-VM
+    // Lors de la configuration vous pouvez ouvrir un terminal en appuyant Alt/Option+F2 (ou F3 selon les ordi) puis Alt+F1 pour le refermer. Appuer sur fn en meme temps si ca ne marche pas
+    // Ce guide ne concerne que la partie de base, pour les bonus on vera plus tard peut-etre
+    
+Config-SUDO
+    // Je ne parle pas de apt et aptitude dans le guide car ce n'est ps explicitement demander. Mais telecharger le quand meme et chercher la difference entre les 2.
+    // Lorsque une commande sudo ne fonctionne pas je vous invite a vous mettre en aministrateur et reesayer (pour rappel c'est su -)
+    // Pourquoi exiger un tty : tty est une commande Unix qui affiche sur la sortie standard le nom du fichier connecté sur l'entrée standard. L'origine du nom tty vient de l'anglais teletypewriter, qui se traduit téléscripteur, et a été abrégé en « TTY ».
+    
+    
