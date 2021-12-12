@@ -1,0 +1,41 @@
+                                     CONFIGURATION DE SSH
+                                     
+                                     
+Étape 1 : Installation et configuration de SSH                                     
+                                     
+1 - Instalation d'un serveur SSH
+    $ sudo apt install openssh-server
+2 - On check si il est bien installer avec :
+    $ dpkg -l | grep ssh
+3 - On configure ssh : 
+    $ sudo vi /etc/ssh/sshd_config
+4 - Chercher la ligne 13 #Port 22 :
+    et la remplacer par # Port 4242
+5 - Chercher la ligne 32 #PermitRootLogin prohibit-password // Pour désactiver la connexion SSH en tant que root quel que soit le mécanisme d'authentification
+    et la remplacer par  # PermitRootLogin no
+6 - Vérifiez l'état SSH
+    $ sudo service ssh status
+
+
+Étape 2 : Installation et configuration d'UFW
+
+1 - Installez ufw // le pare-feu
+    $ sudo apt install ufw
+2 - Vérifiez si ufw a été installé avec succès
+    $ dpkg -l | grep ufw
+3 - Activer le pare-feu
+    $ sudo ufw enable
+4 - Autorisez les connexions entrantes à l'aide du port 4242
+    $ sudo ufw allow 4242
+5 - Vérifiez l'état de l'UFW
+    $ sudo ufw status
+    
+Étape 3 : connexion au serveur via SSH
+
+1 - SSH dans votre machine virtuelle en utilisant le port 4242 
+    $ ssh <username>@<ip-address> -p 4242
+2 - Terminez la session SSH à tout moment // Ca marche aussi pour quitter le mode root 
+    $ logout
+    
+    
+Voila c'est terminer pour SSH. Bon courage pour la suite !
