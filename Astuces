@@ -1,10 +1,27 @@
 Config-VM
     // Lors de la configuration vous pouvez ouvrir un terminal en appuyant Alt/Option+F2 (ou F3 selon les ordi) puis Alt+F1 pour le refermer. Appuer sur fn en meme temps si ca ne marche pas
     // Ce guide ne concerne que la partie de base, pour les bonus on vera plus tard peut-etre
-    
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________    
+    // Lorsque vous etes sur vi faites le moins d'erreur possible c'est galeres de gerer les suppresion et ce qui va avec.
+    // Il y aura des fichiers que vous ne pourrait pas quitter comme dans vim (c'est a dire :wq) , il faudra faire Control+X .
+    // Lorsque votre souris est bloquer appuyer sur commands
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________    
 Config-SUDO
     // Je ne parle pas de apt et aptitude dans le guide car ce n'est ps explicitement demander. Mais telecharger le quand meme et chercher la difference entre les 2.
     // Lorsque une commande sudo ne fonctionne pas je vous invite a vous mettre en aministrateur et reesayer (pour rappel c'est su -)
     // Pourquoi exiger un tty : tty est une commande Unix qui affiche sur la sortie standard le nom du fichier connecté sur l'entrée standard. L'origine du nom tty vient de l'anglais teletypewriter, qui se traduit téléscripteur, et a été abrégé en « TTY ».
+    // Pourquoi Sudo : SUDO est la commande administrateur qui permet d'avoir des privileges, cet notion de privilege resume bien la cpacite qu'est sudo. C'est ce pourquoi nous ne l'avons pas sur nos terminaux normaux. Un grand pouvoir implique de grande responsabilite.
+    // J'ajoueterai si j'ai des oublis
     
+Config-SSH
+    // Rien n'est chiant dedans sauf trouver l'adresse ip , je vous ai mcher le travail
+    // Verifiez souvent avec $ sudo ufw status
     
+Config_USER
+    // Les etapes 2 et 3 ne servent qu'a verifier si l'etape 1 a bien marcher. Si ca ne marche pas c'est que ton etape 1 est mal faites.
+    
+
+
+
+Pour ce qui est des question technique j'ai recuperer le github de quelques, je l'ai trouver plutot complet du coup aller chercker on sait jamais.
+D'ailleur allers les voir pour que vous puissiez tester votre machine sans ca rien ne vous garantie que ca fonctionne.    
