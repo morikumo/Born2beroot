@@ -39,4 +39,4 @@ ATTENTION VOUS NE POUVEZ FAIRE CETTE PARTIE QUE SI LA CONFIGURATION DE VOTRE VM 
 9 - Les paths utilisables par sudo seront restreints :
     Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
     
-C'est terminer pour l'instalation et l'organisation de SUDO bien jouer !
+C'est terminer pour l'instalation et l'organisation de SUDO bien jouer ! Maintenant SSH !
