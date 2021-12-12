@@ -34,6 +34,9 @@
 
 1 - SSH dans votre machine virtuelle en utilisant le port 4242 
     $ ssh <username>@<ip-address> -p 4242
+/* Concernant la recuperation de l'adresse ip c'est compliquer (en tout cas pour moi) il suffirait de faire la commande "ip a" et chercher le premier inet. Le pourquoi c'est compliquer c'est que ca ne marche pas pour tout le monde donc tenter les autres adresses affichers par la commnde aussi . */    
+    
+    
 2 - Terminez la session SSH à tout moment // Ca marche aussi pour quitter le mode root 
     $ logout
     
