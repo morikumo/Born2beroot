@@ -11,8 +11,7 @@
 7 - Pour les mdp choisir des mots de passe simple pour ne pas les oublier. Ici on ne mettra qu'une lettre pour tout les mdp
 8 - pour domaine ne rien mettre, appuyer sur entrer simplement.
 9 - Nom de d'utilisateur : username . Meme mots de passe.
-10 - Choisir "Assister - utiliser tout un disque avec LVM chiffre" si vous voulez faire les bonus choisissez "manuel"
-ici on fera sans .
+10 - Choisir "Assister - utiliser tout un disque avec LVM chiffre" si vous voulez faire les bonus choisissez "manuel" ici on fera sans .
 11 - Entrer , puis "Partitions /home , /var et /tmp separees"
 12 - Oui
 13 - Puis lors du telechargement appuyer annuler. Si vous laisser a 39% du telechargement la machine virtuel va crache
