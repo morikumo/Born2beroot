@@ -14,7 +14,7 @@ Config-SUDO
     // J'ajoueterai si j'ai des oublis
     
 Config-SSH
-    // Rien n'est chiant dedans sauf trouver l'adresse ip , je vous ai mcher le travail
+    // Rien n'est chiant dedans sauf trouver l'adresse ip , je vous ai macher le travail, si la technique donner ne mrche pas essayer "ss -tunlp"
     // Verifiez souvent avec $ sudo ufw status
     
 Config_USER
