@@ -5,7 +5,7 @@ ________________________________________________________________________________
     // Lorsque vous etes sur vi faites le moins d'erreur possible c'est galeres de gerer les suppresion et ce qui va avec.
     // Il y aura des fichiers que vous ne pourrait pas quitter comme dans vim (c'est a dire :wq) , il faudra faire Control+X .
     // Lorsque votre souris est bloquer appuyer sur commands
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________    
+    // Pour recuperer ca signature.txt aller dans votre terminal normal faites cd /Users/<VotreLogin>/VirtualBox VMs/<LeNomDeVotreMachineVirtuel> . et faire la commande shasum centos_serv.vdi <LeNomDeVotreMachineVirtuel.vdi>_________________________________________________________________________________________________________________________________________________________________________________________________________________________    
 Config-SUDO
     // Je ne parle pas de apt et aptitude dans le guide car ce n'est ps explicitement demander. Mais telecharger le quand meme et chercher la difference entre les 2.
     // Lorsque une commande sudo ne fonctionne pas je vous invite a vous mettre en aministrateur et reesayer (pour rappel c'est su -)
