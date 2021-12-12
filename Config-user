@@ -13,3 +13,47 @@
     $ sudo apt install libpam-pwquality
 5 - On verifie si il est bien installer 
     $ dpkg -l | grep libpam-pwquality
+6 - Configurez la stratégie de force de mot de passe
+    $ sudo vi /etc/pam.d/common-password
+    <~~~>
+    chercher cet ligne 25 # password        requisite                       pam_pwquality.so retry=3
+    <~~~>
+    Puis rajouter a cet meme ligne : minlen=10 , ucredit=-1 dcredit=-1 , maxrepeat=3 , reject_username , difok=7 , enforce_for_root 
+    La ligne devrait ressembler a ca :
+    password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+    // La signification de chaque ajout, DANS L'ORDRE : 
+                                                        Pour définir la longueur minimale du mot de passe à 10 caractères
+                                                        Pour exiger que le mot de passe contienne au moins un caractère majuscule et un caractère numérique
+                                                        Pour définir un maximum de 3 caractères identiques consécutifs
+                                                        Pour rejeter le mot de passe s'il contient <username>sous une forme quelconque
+                                                        Pour définir le nombre de modifications requises dans le nouveau mot de passe de l'ancien mot de passe à 7
+                                                        Pour implémenter la même politique sur root
+    
+Étape 2 : Création d'un nouvel utilisateur
+
+1 - Créer un nouvel utilisateur
+    $ sudo adduser <username>
+2 - Vérifiez si l'utilisateur a été créé avec succès
+    $ getent passwd <username>
+3 - Vérifiez les informations d'expiration du mot de passe de l'utilisateur nouvellement créé
+    $ sudo chage -l <username>
+    c'est sense afficher quelque chose comme :
+                                                $ sudo chage -l <username>
+                                                Last password change					: <last-password-change-date>
+                                                Password expires					: <last-password-change-date + PASS_MAX_DAYS>
+                                                Password inactive					: never
+                                                Account expires						: never
+                                                Minimum number of days between password change		: <PASS_MIN_DAYS> 
+                                                Maximum number of days between password change		: <PASS_MAX_DAYS>
+                                                Number of days of warning before password expires	: <PASS_WARN_AGE>
+
+Étape 3 : Création d'un nouveau groupe
+
+1 - Créez un nouveau groupe user42
+    $ sudo addgroup user42
+2 - Ajouter un utilisateur au groupe user42 
+    $ sudo adduser <username> user42
+3 - Vérifiez si l'utilisateur a été ajouté avec succès au groupe user42 
+    $ getent group user42
+    
+Voila pour l'etape de la gestion de l'utilisateur et des groupes bien jouer !
