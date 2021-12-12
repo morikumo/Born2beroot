@@ -1,0 +1,42 @@
+                                                            CONFIGURATION DE SUDO
+                                                            
+                                                            
+                                         
+
+ATTENTION VOUS NE POUVEZ FAIRE CETTE PARTIE QUE SI LA CONFIGURATION DE VOTRE VM C'EST BIEN PASSER !!
+
+1 - Connectez-vous en tant que root avec : $ su -
+2 - Maintenant que vous etes connecter en tant qu'administrateur on va telecharger sudo avec les commandes suivantes :
+  $ apt-get update -y  // Voir si apt a des mise a jour a effectuer
+  $ apt-get upgrade -y // Faires ces mises a jour , si il y en a 
+  $ apt install sudo // Installer sudo
+  $ dpkg -l | grep sudo // Vérifiez si sudo a été installé avec succès
+  
+3 - Ajout d'un utilisateur dans le groupe sudo : 
+  $ adduser <username> sudo // Ajouter un utilisateur au groupe sudo
+  $ getent group sudo // Vérifiez si l'utilisateur a été ajouté avec succès au groupe sudo
+  $ reboot // reboot pour que les modifications prennent effet, puis connectez-vous
+  $ sudo -v // Pour verifier les privileges que sudo apportent
+  
+4 - Vous pouvez maintenant executer les commandes sudo avec le prefixes sudo.
+5 - Maintenant on configure sudo
+  $ sudo vi /etc/sudoers.d/<filename> // Va directement creer un fichier que l'on editera en script shell
+  Dans le script on ecrira : Defaults        passwd_tries=3
+                             Defaults        badpass_message="<custom-error-message>"
+                             // Premiere ligne pour limiter l'authentification à l'aide de sudo à 3 tentatives (par défaut à 3 quand même) en cas de mot de passe incorrect
+                             // Puis saut a la ligne,  pour ajouter un message d'erreur personnalisé en cas de mot de passe incorrect
+6 - Pour avoir un journal d'utilisatiom de la commande sudo , savoir quand on la utiliser et pourquoi :
+  $ sudo mkdir /var/log/sudo
+    <~~~> // A l'interieur du script
+    Defaults        logfile="/var/log/sudo/<filename>"
+    <~~~>
+7 - Pour archiver toutes les entrées et sorties sudo : 
+    // A l'interieur du script 
+    Defaults        log_input,log_output
+    Defaults        iolog_dir="/var/log/sudo"
+8 - Pour exiger un TTY actif comme demander :
+    Defaults        requiretty
+9 - Les paths utilisables par sudo seront restreints :
+    Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+    
+C'est terminer pour l'instalation et l'organisation de SUDO bien jouer !
