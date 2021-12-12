@@ -1,0 +1,15 @@
+                                    CONFIGURATION DES UTILISATEURS
+                                    
+
+Étape 1 : Configuration d'une politique de mot de passe fort
+
+1 - Configurez la politique d'âge du mot de passe 
+    $ sudo vi /etc/login.defs
+2 - Aller ligne 160 chercher 160 # PASS_MAX_DAYS   99999  
+    Pour que le mot de passe expire tous les 30 jours on le remplce par : # PASS_MAX_DAYS   30
+3 - Aller ligne 161  # PASS_MIN_DAYS   0
+    Pour définir le nombre minimum de jours entre les changements de mot de passe à 2 jours on le remplace par : 161 PASS_MIN_DAYS   2
+4 - Fiabiliter du mdp 
+    $ sudo apt install libpam-pwquality
+5 - On verifie si il est bien installer 
+    $ dpkg -l | grep libpam-pwquality
