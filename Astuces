@@ -15,6 +15,8 @@ Config-SUDO
     
 Config-SSH
     // Rien n'est chiant dedans sauf trouver l'adresse ip , je vous ai macher le travail, si la technique donner ne mrche pas essayer "ss -tunlp"
+    // Si le probleme persiste aller voir ca : https://causlayer.orgs.hk/caroldaniel/42sp-cursus-born2beroot/blob/master/guides/Debian-en.md#important 
+    // Rubrique : IMPORTANT
     // Verifiez souvent avec $ sudo ufw status
     
 Config_USER
