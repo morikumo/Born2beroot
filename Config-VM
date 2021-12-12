@@ -29,5 +29,9 @@ ici on fera sans .
 24 - Acceptter l'instalation de GRUb, soit OUI
 25 - choissisez dev/sda ...
 26 - Faites continue ...
+27 - Attendez que l'ordinateur vous demande de choisir debian dans un ecran bleu diferent de celui dans lequel nous etions jusque la.
+28 - Vous remarquerez dans votre menu VM rubrique Maitre secondaire IDE : [Lecteur optique] , il est maintenant marquer vide ! C'est parce que nous sommes a la fin de l'instalation de l'OS par consequant le disque n'est plus d'aucune utilite !
+29 - Maintenant mettez votre mdp 2 fois (une fois pour linux, une fois pour debian) identiiez vous et ...
+30 - ... passons a la partie 2 !
 
 Et c'est terminer !! Passons a l parties 2 SUDO !
