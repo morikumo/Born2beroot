@@ -56,4 +56,4 @@
 3 - Vérifiez si l'utilisateur a été ajouté avec succès au groupe user42 
     $ getent group user42
     
-Voila pour l'etape de la gestion de l'utilisateur et des groupes bien jouer !
+Voila pour l'etape de la gestion de l'utilisateur et des groupes bien jouer ! Maintenant CRON !
