@@ -11,7 +11,9 @@
             - Etape 3 : Config-SSH
             - Etape 4 : Config-USER
             - Etape 5 : Config-CRON
+            - Etape 6 : Config-APPARMOR
  
+ L'ordre n'est pas important sauf pour sudo, apres VM bien sur comme vous aller beaucoup l'utiliser commencer par sudo.
  Je conseillerai d'aller voir avant tout la liste des astuces pour faciliter encore plus cet accompagnement.
  J'espere que vous serez apprecier le travail de quelqu'un qui a penser a vous les amis.
  J'y ai mis le fond et la forme. Alors courage et si il y a un probleme ou que le guide n'est pas complet contacter moi.
