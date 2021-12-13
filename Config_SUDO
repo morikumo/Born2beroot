@@ -29,14 +29,9 @@ ATTENTION VOUS NE POUVEZ FAIRE CETTE PARTIE QUE SI LA CONFIGURATION DE VOTRE VM 
   $ sudo mkdir /var/log/sudo
     <~~~> // A l'interieur du script
     Defaults        logfile="/var/log/sudo/<filename>"
-    <~~~>
-7 - Pour archiver toutes les entrées et sorties sudo : 
-    // A l'interieur du script 
-    Defaults        log_input,log_output
+    Defaults        log_input,log_output // Pour archiver toutes les entrées et sorties sudo
     Defaults        iolog_dir="/var/log/sudo"
-8 - Pour exiger un TTY actif comme demander :
-    Defaults        requiretty
-9 - Les paths utilisables par sudo seront restreints :
-    Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+    Defaults        requiretty // Pour exiger un TTY actif comme demander
+    Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin" // Les paths utilisables par sudo seront restreints 
     
 C'est terminer pour l'instalation et l'organisation de SUDO bien jouer ! Maintenant SSH !
