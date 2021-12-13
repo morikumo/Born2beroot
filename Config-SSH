@@ -10,7 +10,7 @@
 3 - On configure ssh : 
     $ sudo vi /etc/ssh/sshd_config
 4 - Chercher la ligne 13 #Port 22 :
-    et la remplacer par # Port 4242
+    et la remplacer par Port 4242 // Attention a enlever le "#" 
 5 - Chercher la ligne 32 #PermitRootLogin prohibit-password // Pour désactiver la connexion SSH en tant que root quel que soit le mécanisme d'authentification
     et la remplacer par  # PermitRootLogin no
 6 - Vérifiez l'état SSH
