@@ -12,6 +12,7 @@
             - Etape 4 : Config-USER
             - Etape 5 : Config-CRON
             - Etape 6 : Config-APPARMOR
+            - Etape 7 : Config-MONITORING.SH
  
  L'ordre n'est pas important sauf pour sudo, apres VM bien sur comme vous aller beaucoup l'utiliser commencer par sudo.
  Je conseillerai d'aller voir avant tout la liste des astuces pour faciliter encore plus cet accompagnement.
