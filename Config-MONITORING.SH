@@ -4,11 +4,14 @@
 Cette etape n'est senser etre qu'un script shell qui permetrit a l'ordinateur de l'executer toute les 10 min. Ce fichier est important il fait partie des dernieres etape.
 1 - Rendez-vous a l'endroit ou vous editerez un script shell soit :
   $ cd /usr/local/bin/
-  
-2 - Vous creerez votre monitoring.sh
+ 
+2 - Telecharger sysstat pour que la fonctionaliter mpstat fonctionne :
+  $ sudo apt install sysstat
+ 
+3 - Vous creerez votre monitoring.sh
   $ sudo nano monitoring.sh // Vous pouvez utiliser vi si vous voulez mais je recommande nano c'etait plus simple pour moi.
   
-3 - Ecrivez :
+4 - Ecrivez :
 
 #!/bin/bash
 ARCH=$(uname -a)
@@ -44,7 +47,7 @@ wall "
      "
      
 
-4 - Sauvegardez et regardez la definition de "wall"
+5 - Sauvegardez et regardez la definition de "wall"
 
 
      
