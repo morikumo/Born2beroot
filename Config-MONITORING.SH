@@ -48,4 +48,4 @@ wall "
 
 
      
-Maintenant que vous avez aper le script shell, faites tout les check de chaque config pour verifier si tout passe ainsi que ceux de "pris ailleurs" qui sont les test de la soutenance. Prochaine etape comment ller chercher la signature !
+Maintenant que vous avez taper le script shell, faites tout les check de chaque config pour verifier si tout passe ainsi que ceux de "pris ailleurs" qui sont les test de la soutenance. Prochaine etape comment ller chercher la signature !
