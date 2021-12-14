@@ -6,7 +6,7 @@
 2 - Pour planifier l'exécution d'un script shell toutes les 10 minutes
     Chercher le ligne 23 soit : # m h  dom mon dow   command
                                 A remplacer par :
-                                23 */10 * * * * sh /path/to/script
+                                23 */10 * * * * sh /usr/local/bin/monitoring.sh
 3 - Vérifiez les tâches cron planifiées de root
     $ sudo crontab -u root -l
     
