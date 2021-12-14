@@ -6,7 +6,7 @@ Cette etape n'est senser etre qu'un script shell qui permetrit a l'ordinateur de
   $ cd /usr/local/bin/
   
 2 - Vous creerez votre monitoring.sh
-  $ vi monitoring.sh // je conseille d'utiliser sudo
+  $ sudo nano monitoring.sh // Vous pouvez utiliser vi si vous voulez mais je recommande nano c'etait plus simple pour moi.
   
 3 - Ecrivez :
 
