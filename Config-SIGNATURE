@@ -1,0 +1,24 @@
+                                                                         CONFIGURATION DE SIGNATURE
+                                                                         
+                                                                         
+Avant de faire cet etaoe j'insiste sur le fait que toutes les etapes doivent etre faites, que vous alliez voir toutes les etape Config-~~~~ , les astuces et "pris ailleurs".
+J'insiste vraiment, la signature doit etre la DERNIERE ACTION AVANT SET PROJECT AS FINISHED. Si vous avez fait toutes les etapes pafaitement et que vos test fonctionnent (ceux de la soutenances, des etapes Config et ceux du sujet) alors procedes a la signatures.
+
+1 - Rndez vous sur votre machine reel, ouvrez un terminal et aller l'a ou il y a votre machine virtuel :
+  $ cd /VirtualBox VMs/
+  
+2 - Ensuite exectuer la commande suivante :
+  $ shasum centos_serv.vdi <Suivi de votre configuration de la machine virtuelle .vdi> // Ceci est la configuation MacOS de votre machine reel
+  $ sha1sum centos_serv.vdi // Ceci est pour une configuration Linux de votre machine reel
+  
+3 - Vous aurez un resultat ressamblant a : 
+   6e657c4619944be17df3c31faa030c25e43e40af
+   
+ 4 - Vous copier le code en question et vous le coller sur un fichier signature.txt dans votre depot git. C'est la seule chose a rendre.
+ 
+ ATTENTION A PARTIR DU MOMENT OU VOUS DONNER CET SIGNATURE VOUS NE POUVEZ PLUS ALLER SUR VOTRE VM SINON LA SIGNAURE CHANGE
+ LA SIGNATURE CORRESPOND A LA DERNIERE ACTION DE LA MACHINE VIRTUELLE DU COUP SI JUSTE VOUS LA DEMARRER LA SIGNATURE CHANGE.
+ C'EST POUR CA QUE JE DIS QUE LA SIGNATURE EST LA TOUTE DERNIERE CHOSE A FAIRE !!!!
+ 
+ 
+ Sinon vous avez terminer Born2beroot, bien jouer !!
