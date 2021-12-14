@@ -2,8 +2,13 @@
 
 
 Cette etape n'est senser etre qu'un script shell qui permetrit a l'ordinateur de l'executer toute les 10 min. Ce fichier est important il fait partie des dernieres etape.
-
-
+1 - Rendez-vous a l'endroit ou vous editerez un script shell soit :
+  $ cd /usr/local/bin/
+  
+2 - Vous creerez votre monitoring.sh
+  $ vi monitoring.sh // je conseille d'utiliser sudo
+  
+3 - Ecrivez :
 
 #!/bin/bash
 ARCH=$(uname -a)
@@ -38,6 +43,9 @@ wall "
      #Sudo: $SUDO cmd
      "
      
-     
+
+4 - Sauvegardez et regardez la definition de "wall"
+
+
      
 Maintenant que vous avez aper le script shell, faites tout les check de chaque config pour verifier si tout passe ainsi que ceux de "pris ailleurs" qui sont les test de la soutenance. Prochaine etape comment ller chercher la signature !
