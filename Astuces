@@ -7,6 +7,7 @@ ________________________________________________________________________________
     // Lorsque votre souris est bloquer appuyer sur commands
     // Pour recuperer ca signature.txt aller dans votre terminal normal faites cd /Users/<VotreLogin>/VirtualBox VMs/<LeNomDeVotreMachineVirtuel> . et faire la commande shasum centos_serv.vdi <LeNomDeVotreMachineVirtuel.vdi>
     // ATTENTION :A SIGNATURE EST LA DERNIERE CHOSE A FAIRE, SI VOUS RETOURNER SUR VOTRE VM LA SIGNATURE CHANGERA ET VOUS AURAIT 0 !!
+    // Les script shell comportant des '#' en debut de ligne correspondent a des commentaires, comme dans un Makefile. De se faites enlever les '#' lorsque vous voulez que votre script fasse l'action demander !
     _________________________________________________________________________________________________________________________________________________________________________________________________________________________    
 Config-SUDO
     // Je ne parle pas de apt et aptitude dans le guide car ce n'est ps explicitement demander. Mais telecharger le quand meme et chercher la difference entre les 2.
