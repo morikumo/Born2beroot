@@ -3,11 +3,11 @@
  1 - On verifie si APPArmor est bien intaller :
   $ aptitude search apparmor // j'ai utliser aptitude ici car je ne l'avais jamais utiliser auparavant et il fait bien le travail aussi.
  2 - Ensuite si il n'est pas installer, nous procedons a l'instalation :
-  $ aptitude install apparmor
+  $  sudo aptitude install apparmor
 3 - On verifie l'etat de AppArmor
-  $ aa-status 
+  $ sudo aa-status 
 4 - Puis on l'active
-  $ systemctl enable apparmor
+  $ sudo systemctl enable apparmor
  
  
  
