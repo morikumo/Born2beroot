@@ -10,7 +10,8 @@ J'insiste vraiment, la signature doit etre la DERNIERE ACTION AVANT SET PROJECT 
 2 - Ensuite exectuer la commande suivante :
   $ shasum centos_serv.vdi <Suivi de votre configuration de la machine virtuelle .vdi> // Ceci est la configuation MacOS de votre machine reel
   $ sha1sum centos_serv.vdi // Ceci est pour une configuration Linux de votre machine reel
-  // Bien sur votre VM doit etre eteinte !
+  // Et votre signature prendra du temps a s'afficher c'est normal ne paniquez pas patienter seulement.
+  // Bien sur votre VM doit etre eteinte 
 3 - Vous aurez un resultat ressamblant a : 
    6e657c4619944be17df3c31faa030c25e43e40af
    
